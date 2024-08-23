@@ -40,7 +40,7 @@ if uploaded_file is not None:
 else:
     # Use default CSV file if no file is uploaded
     data_folder = os.path.join(os.path.dirname(__file__), 'Data')
-    file_path = os.path.join(data_folder, 'cleaned_sierraleon_dataset.csv')
+    file_path = os.path.join(data_folder, 'benin-malanville.csv')
     Benin = pd.read_csv(file_path)
     st.markdown("<h4 style='font-size: 14px;'>Uploaded file contents - Default Cleaned Serra-Leone Data</h4>", unsafe_allow_html=True)
     with st.markdown(
