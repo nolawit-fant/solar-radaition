@@ -1,8 +1,10 @@
 import streamlit as st
+import os
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
+from utils import load_data, perform_seasonal_decomposition, perform_box_plot_analysis, perform_correlation_analysis
 
 # Set the page title and description
 st.title("Solar Radiation Analysis Dashboard")
@@ -20,32 +22,34 @@ st.sidebar.markdown("---")
 st.sidebar.header("Customization Options")
 selected_methodology = st.sidebar.selectbox("Select Methodology", ["Correlation Analysis", "Time-Series Analysis", "Box Plot Analysis"])
 
-# Perform statistical analysis based on the user selected methodology
+# Perform statistical analysis based on the user-selected methodology
 if uploaded_file is not None:
     # Load the data into a DataFrame
-    try:
-        # Read the CSV file
-        data = pd.read_csv(uploaded_file)
-        
-        # Display the dataframe
+    Benin = load_data(uploaded_file)
+    if Benin is not None:
+        st.subheader("Uploaded file contents - Default Cleaned Serra-Leone Data")
       
-        
-        # Perform further data processing or analysis if needed
-        
-    except pd.errors.ParserError:
+        with st.markdown(
+            f"<div style='max-height: 400px; overflow-y: scroll; overflow-x: scroll;'>",
+            unsafe_allow_html=True,
+        ):
+            st.dataframe(Benin.head(5000))
+        st.write(f"NOTE : Loading and Showing {min(5000, len(Benin))} rows out of {len(Benin)}") 
+    else:
         st.write("Error: Invalid CSV file. Please upload a valid CSV file.")
 else:
     # Use default CSV file if no file is uploaded
-    import os
+    data_folder = os.path.join(os.path.dirname(__file__), 'Data')
+    file_path = os.path.join(data_folder, 'cleaned_sierraleon_dataset.csv')
+    Benin = pd.read_csv(file_path)
+    st.markdown("<h4 style='font-size: 14px;'>Uploaded file contents - Default Cleaned Serra-Leone Data</h4>", unsafe_allow_html=True)
+    with st.markdown(
+        f"<div style='max-height: 400px; overflow-y: scroll; overflow-x: scroll;'>",
+        unsafe_allow_html=True,
+    ):
+        st.dataframe(Benin.head(5000))
+    st.write(f"NOTE : Loading and Showing {min(5000, len(Benin))} rows out of {len(Benin)} ")
 
-    # Get the directory of the current script
-    #current_dir = os.path.dirname(os.path.abspath(__file__))
-    # Construct the path to the data file
-    #file_path = os.path.join(current_dir, "..", "data", "benin-malanville.csv")
-
-    Benin = pd.read_csv('../data/benin-malanville.csv')
-    st.subheader("Uploaded file contents - Default Benin-Malanville Data")
-    st.dataframe(Benin)
     # Methodology selection
     if selected_methodology == "Time-Series Analysis":
         # Seasonal Decomposition
