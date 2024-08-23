@@ -101,6 +101,7 @@ else:
             st.pyplot(fig)
         else:
             st.write("Please select at least one variable.")
+
     elif selected_methodology == "Correlation Analysis":
         # Perform correlation analysis
         st.header("Correlation Analysis")
