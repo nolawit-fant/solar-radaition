@@ -34,7 +34,7 @@ Pandas
 Matplotlib/Seaborn for visualization
 Jupyter Notebook
 # How to Use
-1.lone the repository.  
+1.Clone the repository.  
 2.Create a virtual environment specific to this project.  
 3.Install necessary dependencies from requirements.txt.  
 4.Review the strategy report for actionable insights.
