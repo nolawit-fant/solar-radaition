@@ -34,30 +34,10 @@ Pandas
 Matplotlib/Seaborn for visualization
 Jupyter Notebook
 # How to Use
-
-To set up the Python environment for this project, follow the steps below:
-
-1. **Clone the repository to your local machine:**
-
-   ```bash
-   git clone https://github.com/nolawit-fant/solar-radiation
-
-2. **Create a virtual environment specific to this project. Use the appropriate command for your operating system:**
-
-For Windows:
-
-
-(python -m venv venv
-venv\Scripts\activate)
-
-For Linux and macOS:
-(python3 -m venv venv
-source venv/bin/activate)
-
-3. **Install the required packages.**
-   
-4.**Run the analysis and review the strategy report for actionable insights.**
-
+**1.lone the repository.**
+**2.Create a virtual environment specific to this project**
+**3.Install necessary dependencies from requirements.txt.**
+**4.Review the strategy report for actionable insights.**
 
 # Dashboard development
 Streamlit is a powerful Python library used for building interactive web applications. In this project, Streamlit is used to develop a dashboard for visualizing and exploring the solar energy data.The dashbboard is built in such a way that it provides an intuitive interface to interact with the analyzed data and gain insights.
