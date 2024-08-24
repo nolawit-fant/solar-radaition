@@ -45,14 +45,17 @@ To set up the Python environment for this project, follow the steps below:
 2. **Create a virtual environment specific to this project. Use the appropriate command for your operating system:**
 
 For Windows:
-python -m venv venv
-venv\Scripts\activate
+
+
+(python -m venv venv
+venv\Scripts\activate)
 
 For Linux and macOS:
-python3 -m venv venv
-source venv/bin/activate
+(python3 -m venv venv
+source venv/bin/activate)
 
 3. **Install the required packages.**
+   
 4.**Run the analysis and review the strategy report for actionable insights.**
 
 
