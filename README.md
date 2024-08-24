@@ -34,13 +34,23 @@ Pandas
 Matplotlib/Seaborn for visualization
 Jupyter Notebook
 # How to Use
-Clone the repository:https://github.com/nolawit-fant/solar-radaition
-Navigate to the project directory:cd MoonLight
+To set up the Python environment for this project, follow the steps below:
+
+Clone the repository to your local machine:
+
+git clone https://github.com/nolawit-fant/solar-radaition
+
 Create a virtual environment specific to this project. Use the appropriate command for your operating system:
-Windows:python -m venv venv
+
+Windows:
+
+python -m venv venv
 venv\Scripts\activate
-Linux and macOS:python3 -m venv venv
+Linux and macOS:
+
+python3 -m venv venv
 source venv/bin/activate
+Install the required packages by running the following command:
 Install necessary dependencies from requirements.txt.
 Review the strategy report for actionable insights.
 
