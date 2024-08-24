@@ -37,31 +37,23 @@ Jupyter Notebook
 
 To set up the Python environment for this project, follow the steps below:
 
-Clone the repository to your local machine:
+1. **Clone the repository to your local machine:**
 
-bash
-Copy code
-git clone https://github.com/nolawit-fant/solar-radiation
-Create a virtual environment specific to this project. Use the appropriate command for your operating system:
+   ```bash
+   git clone https://github.com/nolawit-fant/solar-radiation
 
-Windows:
+2. **Create a virtual environment specific to this project. Use the appropriate command for your operating system:**
 
-bash
-Copy code
+For Windows:
 python -m venv venv
 venv\Scripts\activate
-Linux and macOS:
 
-bash
-Copy code
+For Linux and macOS:
 python3 -m venv venv
 source venv/bin/activate
-Install the required packages:
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the analysis and review the strategy report for actionable insights.
+3. **Install the required packages.**
+4.**Run the analysis and review the strategy report for actionable insights.**
 
 
 # Dashboard development
