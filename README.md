@@ -29,10 +29,10 @@ Box Plots: Use box plots to examine the spread and presence of outliers in the s
 Scatter Plots: Generate scatter plots to explore relationships between pairs of variables, such as GHI vs. Tamb or WS vs. WSgust.
 
 # Technologies Used
-Python
-Pandas
-Matplotlib/Seaborn for visualization
-Jupyter Notebook
+Python  
+Pandas  
+Matplotlib/Seaborn for visualization  
+Jupyter Notebook  
 # How to Use
 1.Clone the repository.  
 2.Create a virtual environment specific to this project.  
