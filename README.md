@@ -8,7 +8,7 @@ The goal of this analysis is to perform a thorough exploratory data analysis (ED
 # Exploratory Data Analysis (EDA)
 During the EDA phase, the following analyses are performed on the solar energy dataset:
 
- [Click Here to view the Exploratory-Data-Analysis.ipynb file]()
+ [Click Here to view the Exploratory-Data-Analysis.ipynb file](https://github.com/nolawit-fant/solar-radaition/blob/main/notebooks/EDA.ipynb)
 
 Summary Statistics: Calculate descriptive statistics such as mean, median, and standard deviation for each numeric column in order to understand the data distribution.
 
@@ -35,14 +35,18 @@ Matplotlib/Seaborn for visualization
 Jupyter Notebook
 # How to Use
 Clone the repository:
+
 https://github.com/nolawit-fant/solar-radaition
 Navigate to the project directory:
+
 cd MoonLight
 Create a virtual environment specific to this project. Use the appropriate command for your operating system:
 Windows:
+
 python -m venv venv
 venv\Scripts\activate
 Linux and macOS:
+
 python3 -m venv venv
 source venv/bin/activate
 Install necessary dependencies from requirements.txt.
