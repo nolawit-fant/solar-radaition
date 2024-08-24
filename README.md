@@ -34,10 +34,10 @@ Pandas
 Matplotlib/Seaborn for visualization
 Jupyter Notebook
 # How to Use
-**1.lone the repository.**
-**2.Create a virtual environment specific to this project**
-**3.Install necessary dependencies from requirements.txt.**
-**4.Review the strategy report for actionable insights.**
+1.lone the repository.  
+2.Create a virtual environment specific to this project.  
+3.Install necessary dependencies from requirements.txt.  
+4.Review the strategy report for actionable insights.
 
 # Dashboard development
 Streamlit is a powerful Python library used for building interactive web applications. In this project, Streamlit is used to develop a dashboard for visualizing and exploring the solar energy data.The dashbboard is built in such a way that it provides an intuitive interface to interact with the analyzed data and gain insights.
